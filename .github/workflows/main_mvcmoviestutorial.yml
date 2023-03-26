@@ -59,5 +59,5 @@ jobs:
         with:
           app-name: 'mvcmoviestutorial'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8FB883227F5B4879B98B7AF0086F3047 }}
-          package: .
+          publish-profile: ${{ secrets.MY_SECRET_PUBLISH_PROFILE }}
+          package: '${{ env.WORKING_DIRECTORY }}/MvcMovie6'
