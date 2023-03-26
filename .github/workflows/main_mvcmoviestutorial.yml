@@ -60,4 +60,4 @@ jobs:
           app-name: 'mvcmoviestutorial'
           slot-name: 'Production'
           publish-profile: ${{ secrets.MY_SECRET_PUBLISH_PROFILE }}
-          package: '${{ env.WORKING_DIRECTORY }}/MvcMovie6'
+          package: .
