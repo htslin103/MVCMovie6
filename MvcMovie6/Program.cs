@@ -4,7 +4,7 @@ using MvcMovie6.Data;
 using MvcMovie6.Models;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<MvcMovie6Context>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("MvcMovie6Context") ?? throw new InvalidOperationException("Connection string 'MvcMovie6Context' not found.")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("defaultConnection") ?? throw new InvalidOperationException("Connection string 'MvcMovie6Context' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
